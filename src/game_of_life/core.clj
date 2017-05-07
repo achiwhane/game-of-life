@@ -45,7 +45,7 @@
             (recur (assoc-in new-board [x y] new-liveness) x (inc y)))))))
 
 
-;; replace loops with a nested reduce call
+;; Replace loops with a nested reduce call to be more idiomatic
 (defn indexed-step-with-reduce
   "Yields the next state of the board, using indices to determine neighbors"
   [board]
@@ -64,6 +64,8 @@
           new-board (range h)))
       board (range w))))
 
+;; Collapse nested reduce calls into just one function using for construct
+;; In this case, for will return all x, y tuples in the set {[0, w) X [0, h)}
 (defn indexed-step-with-reduce-collapsed
   [board]
   (let [w (count board)
@@ -82,4 +84,5 @@
 
 (def glider (populate (empty-board 6 6) #{[2 0] [2 1] [2 2] [1 2] [0 1]}))
 (-> (iterate indexed-step glider) (nth 8) pprint)
+
 
