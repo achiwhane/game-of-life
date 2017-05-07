@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b19e7744-3bc7-4937-a82f-6ccc938dbde5" name="Default" comment="" />
+    <list default="true" id="b19e7744-3bc7-4937-a82f-6ccc938dbde5" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game_of_life/core.clj" afterPath="$PROJECT_DIR$/src/game_of_life/core.clj" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,8 +29,8 @@
       <file leaf-file-name="core.clj" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/game_of_life/core.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state relative-caret-position="306">
+              <caret line="78" column="52" lean-forward="true" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -108,7 +111,7 @@
       <pane id="Scope" />
     </panes>
   </component>
-  <component name="ReplState" timestamp="1494112264844">{:repl-history {:ide [], :local [{:command &quot;1 + 1&quot;, :offset 5, :ns &quot;user&quot;} {:command &quot;(println \&quot;Hello World\&quot;)&quot;, :offset 23, :ns &quot;user&quot;} {:command &quot;(defn keck\n  [x]\n  (println x))&quot;, :offset 31, :ns &quot;user&quot;} {:command &quot;(keck \&quot;Hello\&quot;)&quot;, :offset 14, :ns &quot;user&quot;} {:command &quot;(defn empty-board\n  \&quot;Creates a rectangular empty board of the given width and height.\&quot;\n  [w h]\n  (vec (repeat w (vec (repeat h nil)))))\n\n(defn populate\n  \&quot;Turns :on each of the cells specified as [y, x] coordinates\&quot;\n  [board living-cells]\n  (reduce (fn [board coordinates]\n            (assoc-in board coordinates :on))\n          board\n          living-cells))&quot;, :offset 359, :ns &quot;user&quot;} {:command &quot;(def glider (populate (empty-board 6 6) #{[2 0] [2 1] [2 2] [1 2] [0 1]}))&quot;, :offset 74, :ns &quot;user&quot;} {:command &quot;(clojure.pprint glider)&quot;, :offset 23, :ns &quot;user&quot;} {:command &quot;(pprint glider)&quot;, :offset 15, :ns &quot;user&quot;}], :remote []}}</component>
+  <component name="ReplState" timestamp="1494119961521">{:repl-history {:ide [], :local [{:command &quot;1 + 1&quot;, :offset 5, :ns &quot;user&quot;} {:command &quot;(println \&quot;Hello World\&quot;)&quot;, :offset 23, :ns &quot;user&quot;} {:command &quot;(defn keck\n  [x]\n  (println x))&quot;, :offset 31, :ns &quot;user&quot;} {:command &quot;(keck \&quot;Hello\&quot;)&quot;, :offset 14, :ns &quot;user&quot;} {:command &quot;(defn empty-board\n  \&quot;Creates a rectangular empty board of the given width and height.\&quot;\n  [w h]\n  (vec (repeat w (vec (repeat h nil)))))\n\n(defn populate\n  \&quot;Turns :on each of the cells specified as [y, x] coordinates\&quot;\n  [board living-cells]\n  (reduce (fn [board coordinates]\n            (assoc-in board coordinates :on))\n          board\n          living-cells))&quot;, :offset 359, :ns &quot;user&quot;} {:command &quot;(def glider (populate (empty-board 6 6) #{[2 0] [2 1] [2 2] [1 2] [0 1]}))&quot;, :offset 74, :ns &quot;user&quot;} {:command &quot;(clojure.pprint glider)&quot;, :offset 23, :ns &quot;user&quot;} {:command &quot;(pprint glider)&quot;, :offset 15, :ns &quot;user&quot;}], :remote []}}</component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -391,8 +394,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game_of_life/core.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state relative-caret-position="306">
+          <caret line="78" column="52" lean-forward="true" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="52" />
           <folding />
         </state>
       </provider>
